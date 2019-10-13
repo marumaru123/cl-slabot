@@ -1,0 +1,18 @@
+{
+    "settings": [
+        {
+            "name"              : "slabot1"
+            "path"              : "/bot" 
+            "verification-token": "aaaaaaaaaaaaaaaaa"
+	    "bot-oauth-token"   : "bbbb-ccccccccccc-dddddddddd-eeeeeeeeee"
+            "channel-id"        : "zzzzzzzzz"
+        },
+        {
+            "name"              : "slabot2"
+            "path"              : "/bot2" 
+            "verification-token": "xxxxx"
+	    "bot-oauth-token"   : "xxxx-xxxxx-yyyyy"
+            "channel-id"        : "zzzzzzzzz"
+        }
+    ]
+}
