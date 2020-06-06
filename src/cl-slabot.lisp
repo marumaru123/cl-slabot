@@ -21,13 +21,15 @@
            :get-bot-setting
            :*verification-token*
            :*bot-oauth-token*
-           :*acceptor*))
+           :*acceptor*
+	   :*channel-id*))
 (in-package :cl-slabot)
 
 (defvar *acceptor* nil)
 (defvar *path* nil)
 (defvar *verification-token* nil)
 (defvar *bot-oauth-token* nil)
+(defvar *channel-id* nil)
 
 (defparameter *api-content-type* "application/json; charset=utf-8")
 (setq drakma:*drakma-default-external-format* :utf-8)
@@ -45,6 +47,7 @@
   (setf *path*               (get-bot-setting "slabot1" "path"))  
   (setf *verification-token* (get-bot-setting "slabot1" "verification-token"))
   (setf *bot-oauth-token*    (get-bot-setting "slabot1" "bot-oauth-token"))  
+  (setf *channel-id*         (get-bot-setting "slabot1" "channel-id"))  
   (print *path*)
   (hunchentoot:start (setf *acceptor*
 			   (make-instance
